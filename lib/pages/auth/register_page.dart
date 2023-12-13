@@ -21,17 +21,31 @@ class _LoginPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(25.0),
+        body: Container(
+          padding: const EdgeInsets.all(25),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 40,
+                height: 20,
               ),
-              Image.asset("lib/images/shield.png"),
+              SizedBox(
+                width: 80,
+                height: 80,
+                child: Image.asset("lib/images/shield.png"),
+              ),
               const SizedBox(
-                height: 15,
+                height: 25,
+              ),
+              const Text(
+                "Combat Insurgency",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(
+                height: 20,
               ),
               MyTextField(
                 controller: nameController,

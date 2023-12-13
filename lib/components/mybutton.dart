@@ -9,11 +9,16 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 45,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
-      child: ElevatedButton(
-        onPressed: onTap,
-        child: Text(text),
+      height: 55,
+      decoration: BoxDecoration(
+        color: Colors.deepPurple,
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Center(
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
