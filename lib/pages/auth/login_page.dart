@@ -33,11 +33,13 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 25,
               ),
-              const Text(
-                "Combat Insurgency",
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
+              const Center(
+                child: Text(
+                  "Combat Insurgency",
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
               const SizedBox(
