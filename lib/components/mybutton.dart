@@ -11,7 +11,10 @@ class MyButton extends StatelessWidget {
       width: double.infinity,
       height: 45,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
-      child: ElevatedButton(onPressed: onTap, child: Text(text)),
+      child: ElevatedButton(
+        onPressed: onTap,
+        child: Text(text),
+      ),
     );
   }
 }
