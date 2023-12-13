@@ -23,8 +23,7 @@ class _LoginPageState extends State<RegisterPage> {
       child: Scaffold(
         body: Container(
           padding: const EdgeInsets.all(25),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: [
               const SizedBox(
                 height: 20,
