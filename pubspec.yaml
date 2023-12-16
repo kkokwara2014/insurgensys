@@ -38,6 +38,7 @@ dependencies:
   get:
   provider:
   flutter_spinkit:
+  smooth_page_indicator:
 
 dev_dependencies:
   flutter_test:
