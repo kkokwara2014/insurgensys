@@ -17,17 +17,21 @@ class IntroPage extends StatelessWidget {
         horizontal: 25,
         vertical: 25,
       ),
+      color: Colors.grey.shade200,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(imagePath),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .25,
+          ),
+          SizedBox(width: 120, height: 120, child: Image.asset(imagePath)),
           const SizedBox(
             height: 20,
           ),
           Text(
             heading,
             style: const TextStyle(
-              fontSize: 35,
+              fontSize: 25,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -36,8 +40,9 @@ class IntroPage extends StatelessWidget {
           ),
           Text(
             description,
+            textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 25,
+              fontSize: 16,
             ),
           ),
         ],
